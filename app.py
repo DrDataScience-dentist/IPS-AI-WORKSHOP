@@ -10,7 +10,7 @@ st.markdown("Upload a partially edentulous cast image to classify the Kennedy cl
 # Load your model once and cache it
 @st.cache_resource
 def load_model():
-    model = torch.load("efficientnet_kennedy_full.pt", map_location=torch.device("cpu"))
+    model = torch.load("efficientnet_kennedy.pth", map_location=torch.device("cpu"))
     model.eval()
     return model
 
