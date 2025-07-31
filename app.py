@@ -12,7 +12,7 @@ st.title("🦷 Kennedy Classification Predictor")
 def load_model():
     try:
         model = EfficientNet.from_name('efficientnet-b0', num_classes=4)
-        model.load_state_dict(torch.load("efficientnet_kennedy_weights.pth", map_location=torch.device("cpu")))
+        model.load_state_dict(torch.load("efficientnet_kennedy.pth", map_location=torch.device("cpu")))
         model.eval()
         return model
     except Exception as e:
