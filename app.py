@@ -21,7 +21,7 @@ def load_model():
 
 model = load_model()
 
-class_names = ['Kennedy Class I', 'Kennedy Class II', 'Kennedy Class III', 'Kennedy Class IV']
+class_names = ['Kennedy Class II', 'Kennedy Class III', 'Kennedy Class IV', 'Kennedy Class I']
 
 design_recommendations = {
     'Kennedy Class I': """📌 **Design Recommendation**
